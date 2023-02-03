@@ -1,4 +1,4 @@
-進入PT執行 bash build.sh 可建立image: lenovo-test  
-ENTRYPOINT 已經建立好，直接跑的話最後會出現如下資訊:  
+Enter PT and execute "bash build.sh" to build image: lenovo-test  
+If run it directly, the following information will appear in the end:  
 
 ![image](https://github.com/LYW0288/lenovo/blob/main/001.png)
