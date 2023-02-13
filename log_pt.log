@@ -1,0 +1,21 @@
+]0;root@2d11050a2a52: /root@2d11050a2a52:/# pip list        python~
+bash: python~: command not found
+]0;root@2d11050a2a52: /root@2d11050a2a52:/# python~ 3
+Python 3.6.9 (default, Oct  8 2020, 12:12:24) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import torch
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/usr/local/lib/python3.6/dist-packages/torch/__init__.py", line 189, in <module>
+    _load_global_deps()
+  File "/usr/local/lib/python3.6/dist-packages/torch/__init__.py", line 142, in _load_global_deps
+    ctypes.CDLL(lib_path, mode=ctypes.RTLD_GLOBAL)
+  File "/usr/lib/python3.6/ctypes/__init__.py", line 348, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libcurand.so.10: cannot open shared object file: No such file or directory
+>>> exit()
+]0;root@2d11050a2a52: /root@2d11050a2a52:/# exit()
+> exit()> [K^C
+]0;root@2d11050a2a52: /root@2d11050a2a52:/# exit()  
+exit

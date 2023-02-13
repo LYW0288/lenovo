@@ -1,0 +1,47 @@
+]0;root@fed0f206ba18: /root@fed0f206ba18:/# python3
+Python 3.6.9 (default, Oct  8 2020, 12:12:24) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tensorflow s tf
+  File "<stdin>", line 1
+    import tensorflow s tf
+                      ^
+SyntaxError: invalid syntax
+>>> import tensorflow s tf[1@a
+2022-12-09 09:17:41.519622: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcudart.so.10.2'; dlerror: libcudart.so.10.2: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib:
+2022-12-09 09:17:41.519693: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+>>> print("Is USE GPU? ", tf.test.is_gpu_available())
+WARNING:tensorflow:From <stdin>:1: is_gpu_available (from tensorflow.python.framework.test_util) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.list_physical_devices('GPU')` instead.
+2022-12-09 09:17:46.035201: W tensorflow/core/platform/profile_utils/cpu_utils.cc:108] Failed to find bogomips or clock in /proc/cpuinfo; cannot determine CPU frequency
+2022-12-09 09:17:46.036114: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x20a12d70 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2022-12-09 09:17:46.037255: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2022-12-09 09:17:46.048487: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2022-12-09 09:17:46.158466: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2022-12-09 09:17:46.158924: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x209fe2f0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2022-12-09 09:17:46.159068: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Xavier, Compute Capability 7.2
+2022-12-09 09:17:46.159564: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2022-12-09 09:17:46.159730: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1742] Found device 0 with properties: 
+pciBusID: 0000:00:00.0 name: Xavier computeCapability: 7.2
+coreClock: 1.109GHz coreCount: 6 deviceMemorySize: 15.45GiB deviceMemoryBandwidth: 66.10GiB/s
+2022-12-09 09:17:46.160022: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcudart.so.10.2'; dlerror: libcudart.so.10.2: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib:
+2022-12-09 09:17:46.160402: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcublas.so.10'; dlerror: /usr/lib/aarch64-linux-gnu/libcublas.so.10: file too short; LD_LIBRARY_PATH: /usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib:
+2022-12-09 09:17:46.160843: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcufft.so.10'; dlerror: libcufft.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib:
+2022-12-09 09:17:46.161163: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcurand.so.10'; dlerror: libcurand.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib:
+2022-12-09 09:17:46.162662: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcusolver.so.10'; dlerror: libcusolver.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib:
+2022-12-09 09:17:46.163034: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcusparse.so.10'; dlerror: libcusparse.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib:
+2022-12-09 09:17:46.163313: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcudnn.so.8'; dlerror: /usr/lib/aarch64-linux-gnu/libcudnn.so.8: file too short; LD_LIBRARY_PATH: /usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib:
+2022-12-09 09:17:46.163364: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1779] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2022-12-09 09:17:46.163419: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1283] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-12-09 09:17:46.163495: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1289]      0 
+2022-12-09 09:17:46.163540: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1302] 0:   N 
+Is USE GPU?  False
+>>> exit()
+]0;root@fed0f206ba18: /root@fed0f206ba18:/# c nc vcc -V
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2019 NVIDIA Corporation
+Built on Wed_Oct_23_21:14:42_PDT_2019
+Cuda compilation tools, release 10.2, V10.2.89
+]0;root@fed0f206ba18: /root@fed0f206ba18:/# exit
