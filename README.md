@@ -6,5 +6,5 @@ If run it directly, the following information will appear in the end:
 ---  
 23/02/13  
 update tensorflow/pytorch test log  
-*tensorflow image*: l4t-tensorflow:r32.5.0-tf2.3-py3  
-*pytorch image*: l4t-pytorch:r32.5.0-pth1.7-py3  
+**tensorflow image**: l4t-tensorflow:r32.5.0-tf2.3-py3  
+**pytorch image**: l4t-pytorch:r32.5.0-pth1.7-py3  
