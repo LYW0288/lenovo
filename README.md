@@ -1,4 +1,8 @@
-
+23/03/27  
+===  
+Update pytorch dockerfile, it can be used to build L4T pytorch docker for jetpack 5.0.1  
+It docker images can aslo be finded at docker hub (lyw028870/lenovo-acc-5.0.1)  
+  
 23/02/13  
 ===  
 update tensorflow/pytorch test log  
